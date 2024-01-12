@@ -22,7 +22,7 @@ const Navbar = ()=>{
                 <li onClick={()=>{setMenu("Kids")}}><Link to='/kids'>Kids</Link>{menu==="Kids" ?<hr style={{ backgroundColor: '#f00', height: '2px'}}/>:null}</li>
             </ul>
             <div className='nav-login-cart flex mr-32 gap-5'>
-                <Link to='/login'><button className=''>Login</button></Link>
+                <Link to='/login'><button >Login</button></Link>
                 <Link to='/cart'><img className='scale-50' src={cart_icon} alt='cart'/></Link>
                 <div><div className='relative right-8 bg-red-600 bg-auto rounded-full'>0</div></div>
             </div>
