@@ -2,7 +2,7 @@ import React from 'react'
 import hero_image from '../Assets/hero_image.png'
 const Hero = ()=>{
     return (
-        <div className='hero flex justify-center items-center gap-44 '>
+        <div className='hero flex justify-center items-center gap-44 bg-gradient-to-b from-fuchsia-200'>
             <div>
                 <h4 className='text-2xl font-bold'>NEW ARRIVALS ONLY</h4>
                 <h1 className='text-8xl font-bold'>new</h1>
