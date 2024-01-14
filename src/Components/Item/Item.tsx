@@ -19,11 +19,10 @@ export class Item extends Component<ItemProps> {
             <div>
                 <div>
                     <img src={this.props.image}  alt={this.props.name} />
-                    <p>{this.props.id}</p>
                     <p>{this.props.name}</p>
-                    <div>
+                    <div className='flex gap-5'>
                         <div>${this.props.new_price}</div>
-                        <div>${this.props.old_price}</div>
+                        <div className='line-through opacity-40'>${this.props.old_price}</div>
                     </div>
                 </div>
             </div>
