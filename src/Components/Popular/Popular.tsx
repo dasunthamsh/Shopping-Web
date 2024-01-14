@@ -7,7 +7,8 @@ const Popular = ()=>{
         <div>
             <h1>Popular in women</h1>
             <hr/>
-            <div>
+            <div className='flex'>
+                 {/*loop everything in item class in here*/}
                 {data_product.map((item,i)=>{
                     return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
                 })}
@@ -15,5 +16,4 @@ const Popular = ()=>{
         </div>
     )
 }
-
 export default Popular

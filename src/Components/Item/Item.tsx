@@ -16,7 +16,7 @@ export class Item extends Component<ItemProps> {
 
     render(){
         return (
-            <div className='fuc'>
+            <div>
                 <div>
                     <img src={this.props.image}  alt={this.props.name} />
                     <p>{this.props.id}</p>
@@ -26,10 +26,9 @@ export class Item extends Component<ItemProps> {
                         <div>${this.props.old_price}</div>
                     </div>
                 </div>
-
-
             </div>
 
         );
     }
 }
+// this class return to popular class
