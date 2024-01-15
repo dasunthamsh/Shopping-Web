@@ -27,7 +27,7 @@ const ShopCategory: React.FC<ShopCategoryProps> = ({ banner,category }) => {
             </div>
             <div>
                 {all_product.map((item,i) => {
-                    if (category==item.category){
+                    if (category===item.category){
                         return <Item
                             key={i}
                             id={item.id}
@@ -39,6 +39,9 @@ const ShopCategory: React.FC<ShopCategoryProps> = ({ banner,category }) => {
                         return null;
                     }
                 })}
+            </div>
+            <div>
+
             </div>
         </div>
     );
