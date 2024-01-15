@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewsLetter = () => {
     return (
-        <div className='flex justify-center items-center  bg-gradient-to-b from-fuchsia-200 m-32 pt-10'>
+        <div className='flex justify-center items-center  bg-gradient-to-b from-fuchsia-200 m-32 pt-10 '>
             <div className='text-center grid gap-5'>
                 <h1 className='font-bold text-4xl'>Get Exclusive Offers On Your Email</h1>
                 <p className=''>Subscribe to our Newsletter and stay updated</p>
