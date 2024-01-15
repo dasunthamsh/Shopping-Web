@@ -7,28 +7,15 @@ import Popular from "../Popular/Popular";
 const Footer = ()=>{
     return (
 
-        <>
-            <div className='flex gap-2 bg-black mt-32 '>
-                <div>
-                    <img className='scale-75' src={instagram_icon}/>
-                </div>
-                <div>
-                    <img className='scale-75' src={pintester_icon}/>
-                </div>
-                <div>
-                    <img className='scale-75' src={whatsapp_icon}/>
-                </div>
-            </div>
-
-
-            <div className='flex gap-32 justify-center'>
+        <div className='flex justify-center text-center'>
+            <div className='grid gap-10'>
                 <div>
                     <img src={footer_logo}/>
-                    <p>SHOPPER</p>
+                    <p className='text-center'> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/> Incidunt consequuntur amet culpa
+                        cum itaque neque.</p>
                 </div>
                 <div>
-                    <h1 className='font-bold'>Information</h1>
-                    <ul className='ml-4 grid gap-5'>
+                    <ul className='flex gap-5'>
                         <li>Company</li>
                         <li>Products</li>
                         <li>Office</li>
@@ -38,13 +25,26 @@ const Footer = ()=>{
                 </div>
 
                 <div>
-                    <hr/>
                     <p>Copyright @ 2024 - All Right Reserved</p>
                 </div>
+                <div className='flex gap-2 mt-32 '>
+                    <div>
+                        <img className='scale-75' src={instagram_icon}/>
+                    </div>
+                    <div>
+                        <img className='scale-75' src={pintester_icon}/>
+                    </div>
+                    <div>
+                        <img className='scale-75' src={whatsapp_icon}/>
+                    </div>
+                </div>
             </div>
-        </>
+
+        </div>
 
     )
 }
 
 export default Footer
+
+
