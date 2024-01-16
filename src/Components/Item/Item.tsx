@@ -1,4 +1,5 @@
 import React, { Component} from "react";
+import {Link} from "react-router-dom";
 
 interface ItemProps {
     image: string;
@@ -18,7 +19,7 @@ export class Item extends Component<ItemProps> {
         return (
             <div>
                 <div>
-                    <img src={this.props.image}  alt={this.props.name} />
+                    <Link to={`/product/${this.props.id}`}><img src={this.props.image}  alt={this.props.name} /></Link>
                     <p>{this.props.name}</p>
                     <div className='flex gap-5'>
                         <div>${this.props.new_price}</div>
