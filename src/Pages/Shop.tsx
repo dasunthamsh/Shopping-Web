@@ -6,6 +6,8 @@ import NewCollections from "../Components/NewCollections/NewCollections";
 import NewsLetter from "../Components/NewsLetter";
 import Footer from "../Components/Footer/Footer";
 import LoginSignup from "./LoginSignup";
+import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
+import product from "./Product";
 
 const Shop = ()=>{
     return (

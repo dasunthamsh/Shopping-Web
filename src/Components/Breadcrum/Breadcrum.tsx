@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import arrow_icon from '../Assets/breadcrum_arrow.png';
 
 interface BreadcrumProps {
@@ -9,16 +9,20 @@ interface BreadcrumProps {
     };
 }
 
-const Breadcrum: React.FC<BreadcrumProps> = ({ product }) => {
-    return (
-        <div>
-            HOME <img src={arrow_icon} alt="Arrow Icon" />
-            SHOP <img src={arrow_icon} alt="Arrow Icon" />
-            {product.category}
-            <img src={arrow_icon} alt="Arrow Icon" />
-            {product.name}
-        </div>
-    );
-};
+class Breadcrum extends Component<BreadcrumProps> {
+    render() {
+        const { product } = this.props;
+
+        return (
+            <div>
+                HOME <img src={arrow_icon} alt="Arrow Icon" />
+                SHOP <img src={arrow_icon} alt="Arrow Icon" />
+                {product.category}
+                <img src={arrow_icon} alt="Arrow Icon" />
+                {product.name}
+            </div>
+        );
+    }
+}
 
 export default Breadcrum;
